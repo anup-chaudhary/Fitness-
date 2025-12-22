@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+    }
+}
+
+@layer utilities {
+    .team-hover {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .team-hover:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+
+    .image-morph {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.2s;
+    }
+
+    .image-morph:hover {
+        transform: translateX(10px) scale(1.25) skewY(-5deg);
+    }
+
+    .blog-card {
+
+        transition-property: all;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.2ms;
+    }
+
+    .blog-card:hover {
+
+        transform: scale(1.05);
+    }
+
+
+
+    .blog-card-button:hover {
+        background-color: #CF0F0F;
+        transform: scale(1.05);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .program {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.2ms;
+    }
+
+    .program:hover {
+        transform: scale(1.05);
+    }
+
+    .price {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.2ms;
+    }
+
+    .price:hover {
+        transform: scale(1.05);
+    }
+
+
+}
