@@ -2,7 +2,6 @@ import React from 'react';
 import food from "../assets/food.png";
 import recovery from "../assets/recovery.jpg";
 import success from "../assets/sucess.jpg";
-import { useState } from 'react';
 const Blog = () => {
     const Routin = [
         { picture: food, element: "Healthy Nutrition: Fuel Your Body Right" },

@@ -1,18 +1,14 @@
 import React from 'react';
 import { MdArrowOutward } from "react-icons/md";
-import weight from "../assets/weight.jpg"
-import cardio from "../assets/cardio.jpg"
-import lefting from "../assets/lefting.jpg"
-import fitness from "../assets/fitness.jpg"
-
-
+import cardiac from "../assets/Cardiac.jpg";
+import physical from "../assets/physical.jpg";
+import running from '../assets/Running.jpg';
+import stretching from '../assets/stretching.jpg'
 const Team = () => {
-    const Trainers = [{ picture: weight, role: "Head Crossfit Coach", name: "Alex Mercer" },
-    { picture: cardio, role: "Functional Training", name: "Berek Holt" },
-    { picture: lefting, role: "Wellness Expert", name: "Minan Carter" },
-    { picture: fitness, role: "Werllness Expert", name: "Megan Paul" }
-    ]
-
+    const Trainer = [{ pictrue: cardiac, role: "Wellness Expert", name: "Mina Carter" },
+    { pictrue: physical, role: "Functional Training", name: "Neena Paul" },
+    { pictrue: running, role: "Wellness Expert", name: "Alex Mercer" },
+    { pictrue: stretching, role: "Head CrossFit Coach", name: "Jhon Miller" }]
     return (
         <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-6 m-3  text-white">
@@ -32,33 +28,26 @@ const Team = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 p-4 m-4 gap-8 text-white md:grid-cols-2 lg:grid-cols-3">
-                {Trainers.map((item, index) => (
-                    <div
-                        key={index}
-                        className="group flex flex-col gap-3 overflow-hidden rounded bg-gray-900 shadow-sm shadow-gray-400 team-hover"
-                    >
-                        <img
-                            className="h-[40vh] w-full rounded object-cover lg:h-[60vh]"
-                            src={item.picture}
-                            alt="fitness"
-                        />
-
-                        <div className="flex items-center justify-between p-3">
-                            <div>
-                                <h1 className="text-2xl font-bold">{item.name}</h1>
-                                <p className="text-md font-semibold">{item.role}</p>
+            <div className=' text-white m-3 grid   p-4 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+                {Trainer.map((item) => (
+                    <div className='border team  overflow-hidden rounded-xl flex flex-col justify-center gap-3 bg-gray-900 '>
+                        <img className='lg:h-[40vh] sm:h-[32vh] h-[26vh] w-full object-cover' src={item.pictrue} alt="" />
+                        <div className='flex  p-4 items-center justify-between   '>
+                            <div className='flex flex-col justify-center gap-2 p-3'>
+                                <h1 className='text-2xl font-semibold'>{item.name.toUpperCase()}</h1>
+                                <p className='font-bold lg:text-lg sm:text-base text-sm text-orange-500'>{item.role.toLowerCase()}</p>
                             </div>
-
-                            <MdArrowOutward
-                                size={40}
-                                color="#CF4B00"
-                                className="transition-transform duration-300 ease-in-out group-hover:rotate-90"
-                            />
+                            <div>
+                                <MdArrowOutward className='arrow_rotate' size={30} color='#FF6C0C' />
+                            </div>
                         </div>
+
                     </div>
+
                 ))}
             </div>
+
+
 
 
         </>

@@ -20,10 +20,10 @@ const Programs = () => {
                 </div>
                 <div className=' p-4 text-gray-200 text-justify tracking-tighter '><p className='text-lg'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatum eaque quam consequuntur dignissimos, laborum autem repellendus assumenda qui fugiat.</p></div>
             </div>
-            <div className='text-white overflow-hidden grid rounded-xl
+            <div className='text-white  grid rounded-xl
              gap-6 lg:grid-cols-3 sm:grid-cols-2  p-3 m-3'>
                 {Ourprogram.map((item, index) => (
-                    <div key={index} className=' flex flex-col border-gray-300 program shadow-md shadow-gray-500  justify-center rounded '>
+                    <div key={index} className=' flex overflow-hidden flex-col border-gray-300 program shadow-md shadow-gray-500  justify-center rounded '>
                         <div className='bg-gray-900 p-3 flex flex-col items-center gap-2 '>
                             <p className='font-semibold text-lg'>{item.feature.toUpperCase()}</p>
                             <h1 className='text-orange-500 text-4xl font-semibold'>{item.program.toUpperCase()}</h1>

@@ -38,9 +38,9 @@
     .blog-card {
 
         transition-property: all;
-        transition-duration: 0.8s;
-        transition-timing-function: ease-in;
-        transition-delay: 0.2ms;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0;
     }
 
     .blog-card:hover {
@@ -77,6 +77,36 @@
 
     .price:hover {
         transform: scale(1.05);
+    }
+
+    .team {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.2ms;
+    }
+
+    .team:hover {
+
+        transform: scale(1.05);
+    }
+
+    .arrow_rotate {
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+        transition-delay: 0s;
+    }
+
+    .team:hover .arrow_rotate {
+        transform: rotate(90deg);
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
     }
 
 

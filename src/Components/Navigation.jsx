@@ -24,7 +24,6 @@ const Navigation = () => {
 
                     <h1 className="text-2xl font-bold "><span className="text-orange-500">Fit</span>Forge</h1>
                 </div>
-
                 <nav className="hidden md:flex">
                     <ul className="flex gap-6 text-lg">
                         {navLinks.map((item, i) => (
@@ -85,7 +84,7 @@ const Navigation = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li>
+                        <li> 
                             <Link
                                 to="footer"
                                 smooth={true}

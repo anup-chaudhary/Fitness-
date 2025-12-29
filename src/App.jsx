@@ -20,7 +20,6 @@ const App = () => {
       <Story />
       <Element name='programs' className='element' >
         <Programs />
-
       </Element>
       <Features />
       <Element name='price' className='element'>
